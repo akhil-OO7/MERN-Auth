@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 });
 
 //route
-app.user("/api/user", userRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/workouts", workoutRoutes);
 
 // connect to db
